@@ -1,0 +1,42 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: whitesmoke;
+  height: 150px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.navBar .navBar_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+  flex-grow: 1;
+}
+.navBar .navBar_logo a img {
+  width: 100%;
+  max-width: 100px;
+}
+.navBar .navBar_linksWrapper {
+  height: 100%;
+  display: flex;
+  flex-grow: 2;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+.navBar .navBar_linksWrapper .navLink a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.navBar .navBar_linksWrapper .navLink a:hover {
+  text-shadow: 5px 4px 10px rgba(150, 150, 150, 1);
+}

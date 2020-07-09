@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.aboutWrapper {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.aboutWrapper .headerImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/banners/aboutBanner1.jpeg);
+  padding: 100px;
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutWrapper .aboutBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.aboutWrapper .aboutBody .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+.aboutWrapper .aboutBody .content h1 {
+  width: 100%;
+  text-align: left;
+  margin: 20px;
+}
+.aboutWrapper .aboutBody .content .aboutUnderline {
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.aboutWrapper .aboutBody .content .aboutContent {
+  font-size: 1.3rem;
+}

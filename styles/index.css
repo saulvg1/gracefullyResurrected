@@ -1,0 +1,188 @@
+body {
+  background: whitesmoke;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.homeBody-wrapper {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.homeBody-wrapper .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/banners/homeImage1.jpg);
+  padding: 100px;
+  /* image paralax code */
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.homeBody-wrapper .header h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: white;
+}
+.homeBody-wrapper .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homeBody-wrapper .us {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.homeBody-wrapper .us .content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeBody-wrapper .us .content h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.homeBody-wrapper .us .content p {
+  font-size: 1.5rem;
+}
+.homeBody-wrapper .us .content a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.homeBody-wrapper .us .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.homeBody-wrapper .us .mugImage img {
+  padding: 30px;
+  max-height: 250px;
+  max-width: 100%;
+}
+.homeBody-wrapper .backgroundImage2 {
+  background-image: url(../assets/banners/homeHero.jpg);
+  width: 100%;
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.homeBody-wrapper .services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.homeBody-wrapper .services .titleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.homeBody-wrapper .services .servicesSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  background-color: whitesmoke;
+  padding: 30px;
+}
+.homeBody-wrapper .services .servicesSection .serviceWrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 300px;
+  width: 80%;
+  padding: 10px;
+}
+.homeBody-wrapper .services .servicesSection .serviceWrapper .serviceLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.homeBody-wrapper .services .servicesSection .serviceWrapper .serviceLogo i {
+  font-size: 3em;
+}
+.backgroundImage3 {
+  background-image: url(../assets/banners/homeImage2.jpg);
+  width: 100%;
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.estimate {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.estimate .infoSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 60%;
+}
+.estimate .infoSection .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.estimate .infoSection .info h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+}
+.estimate .infoSection .info span {
+  text-align: left;
+  width: 100%;
+  font-size: 1.5rem;
+}
+.estimate .infoSection .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.estimate .infoSection .link a {
+  text-decoration: none;
+  font-size: 2rem;
+  border: 2px solid navy;
+  color: black;
+  padding: 20px;
+  border-radius: 3px;
+}
+.estimate .infoSection .link a:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
