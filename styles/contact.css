@@ -1,0 +1,93 @@
+.contactBody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.contactBody .contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 2;
+}
+.contactBody .contact-wrapper .contactForm {
+  height: auto;
+  width: 80%;
+  max-width: 500px;
+}
+.contactBody .contact-wrapper .contactForm h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.contactBody .contact-wrapper .contactForm form {
+  width: 100%;
+  height: 100%;
+}
+.contactBody .contact-wrapper .contactForm form .hidden {
+  visibility: hidden;
+}
+.contactBody .contact-wrapper .contactForm form .hidden.visable {
+  visibility: visible;
+  color: green;
+}
+.contactBody .contact-wrapper .contactForm .formInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+}
+.contactBody .contact-wrapper .contactForm .formInput label {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+.contactBody .contact-wrapper .contactForm .formInput input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+}
+.contactBody .contact-wrapper .contactForm .formInput input:focus {
+  outline: none;
+  border-bottom: 2px solid blue;
+}
+.contactBody .contact-wrapper .contactForm .formInput input:hover {
+  border-bottom: 2px solid blue;
+}
+.contactBody .contact-wrapper .contactForm .formButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contactBody .contact-wrapper .contactForm .formButton button {
+  background: white;
+  border: 2px solid blue;
+  height: auto;
+  width: auto;
+  font-size: 1.5rem;
+}
+.contactBody .contact-wrapper .contactInfo {
+  padding: 100px;
+  height: auto;
+}
+
+.googleMap {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}

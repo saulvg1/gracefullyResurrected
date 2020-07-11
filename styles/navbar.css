@@ -40,3 +40,29 @@
 .navBar .navBar_linksWrapper .navLink a:hover {
   text-shadow: 5px 4px 10px rgba(150, 150, 150, 1);
 }
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown_content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown_content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.servicesDropdown:hover .dropdown_content {
+  display: block;
+}
