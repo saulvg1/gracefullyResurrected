@@ -17,8 +17,7 @@ body {
   align-items: center;
   justify-content: center;
   background-image: url(../assets/banners/homeImage1.jpg);
-  padding: 100px;
-  /* image paralax code */
+  padding: 100px 0px;
   height: 300px;
   background-attachment: fixed;
   background-position: center;
@@ -29,6 +28,8 @@ body {
   font-size: 3.5rem;
   font-weight: 900;
   color: white;
+  padding: 0px 50px;
+  text-align: center;
 }
 .homeBody-wrapper .body {
   display: flex;
@@ -58,6 +59,7 @@ body {
 }
 .homeBody-wrapper .us .content p {
   font-size: 1.5rem;
+  text-align: center;
 }
 .homeBody-wrapper .us .content a {
   font-size: 1.5rem;
@@ -146,11 +148,11 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .estimate .infoSection {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: auto;
   width: 60%;
 }
 .estimate .infoSection .info {
@@ -174,6 +176,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 25px;
 }
 .estimate .infoSection .link a {
   text-decoration: none;

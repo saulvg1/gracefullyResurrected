@@ -1,12 +1,12 @@
 .footer {
-  height: 400px;
+  height: auto;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   background-color: #201e1d;
-  text-shadow: 5px 4px 10px rgba(150, 150, 150, 1);
+  box-shadow: 5px 4px 10px rgba(150, 150, 150, 1);
 }
 .footer .logo {
   display: flex;
