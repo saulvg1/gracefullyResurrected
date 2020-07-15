@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 body {
   background: whitesmoke;
   margin: 0;
   padding: 0;
   height: 100%;
+
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .homeBody-wrapper {
@@ -25,11 +28,11 @@ body {
   background-size: cover;
 }
 .homeBody-wrapper .header h1 {
-  font-size: 3.5rem;
+  font-size: 3em;
   font-weight: 900;
   color: white;
-
   text-align: center;
+  padding: ;
 }
 .homeBody-wrapper .body {
   display: flex;
@@ -56,19 +59,23 @@ body {
 .homeBody-wrapper .us .content h2 {
   font-size: 2rem;
   font-weight: 900;
+  color: #001233;
 }
 .homeBody-wrapper .us .content p {
   font-size: 1.5rem;
   text-align: center;
+  color: #001233;
 }
 .homeBody-wrapper .us .content a {
   font-size: 1.5rem;
   text-decoration: none;
-  color: black;
   cursor: pointer;
-  padding: 10px;
   border: 2px solid black;
-  border-radius: 5px;
+  background-color: #0466c8;
+  color: white;
+  padding: 20px;
+  border: 1px solid #0466c8;
+  border-radius: 3px;
 }
 .homeBody-wrapper .us .content a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -95,6 +102,7 @@ body {
   align-items: center;
   width: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
 }
 .homeBody-wrapper .services .titleSection {
   display: flex;
@@ -102,6 +110,16 @@ body {
   align-items: center;
   justify-content: center;
   padding: 30px;
+  color: #fff;
+  text-align: center;
+  word-wrap: normal;
+  background-color: #001233;
+}
+.homeBody-wrapper .services .titleSection h1 {
+  font-size: 3rem;
+}
+.homeBody-wrapper .services .titleSection h3 {
+  font-size: 1.5rem;
 }
 .homeBody-wrapper .services .servicesSection {
   display: flex;
@@ -116,9 +134,16 @@ body {
 .homeBody-wrapper .services .servicesSection .serviceWrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  max-width: 300px;
-  width: 80%;
   padding: 10px;
+  width: 300px;
+  min-width: 200px;
+  min-height: 300px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 2px 5px 8px rgba(3, 83, 164, 1);
+  -moz-box-shadow: 0px 2px 5px 8px rgba(3, 83, 164, 1);
+  box-shadow: 0px 2px 5px 8px rgba(3, 83, 164, 1);
 }
 .homeBody-wrapper .services .servicesSection .serviceWrapper .serviceLogo {
   display: flex;
@@ -128,7 +153,39 @@ body {
 }
 .homeBody-wrapper .services .servicesSection .serviceWrapper .serviceLogo i {
   font-size: 3em;
+  color: #002855;
 }
+.homeBody-wrapper
+  .services
+  .servicesSection
+  .serviceWrapper
+  .serviceContent
+  h2
+  a {
+  text-decoration: none;
+  color: #002855;
+}
+.homeBody-wrapper
+  .services
+  .servicesSection
+  .serviceWrapper
+  .serviceContent
+  .Lists
+  ul {
+  list-style-type: none;
+}
+.homeBody-wrapper
+  .services
+  .servicesSection
+  .serviceWrapper
+  .serviceContent
+  .Lists
+  .serviceList
+  li {
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+}
+
 .backgroundImage3 {
   background-image: url(../assets/banners/homeImage2.jpg);
   width: 100%;
@@ -154,6 +211,7 @@ body {
   justify-content: center;
   height: auto;
   width: 60%;
+  color: #001233;
 }
 .estimate .infoSection .info {
   display: flex;
@@ -181,9 +239,10 @@ body {
 .estimate .infoSection .link a {
   text-decoration: none;
   font-size: 2rem;
-  border: 2px solid navy;
-  color: black;
+  background-color: #0466c8;
+  color: white;
   padding: 20px;
+  border: 1px solid #0466c8;
   border-radius: 3px;
 }
 .estimate .infoSection .link a:hover {
