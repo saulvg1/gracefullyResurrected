@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 100%;
   align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -87,8 +88,23 @@ body {
 }
 
 .contactBody .contact-wrapper .contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 100px;
   height: auto;
+  max-height: 500px;
+  width: auto;
+}
+.contactBody .contact-wrapper .contactInfo .contactInfo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-height: 500px;
+  height: 50vh;
+  width: auto;
 }
 .contactBody
   .contact-wrapper
@@ -97,6 +113,24 @@ body {
   .contactInfo-header
   h1 {
   text-align: center;
+  font-size: 3rem;
+}
+.contactBody
+  .contact-wrapper
+  .contactInfo
+  .contactInfo-wrapper
+  .contactInfo-header
+  .contactInfo-line {
+  width: 100%;
+  border-top: 2px solid #0353a4;
+  border-bottom: 2px solid #0353a4;
+}
+.contactBody
+  .contact-wrapper
+  .contactInfo
+  .contactInfo-wrapper
+  .contactInfo-content {
+  font-size: 1.5rem;
 }
 
 .googleMap {

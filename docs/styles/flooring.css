@@ -41,8 +41,8 @@
 }
 .flooring-wrapper .flooring-body .content .line {
   width: 100%;
+  border-top: 2px solid #0353a4;
   border-bottom: 2px solid #0353a4;
-  border-radius: 20px;
 }
 .flooring-wrapper .flooring-body .content h4 {
   font-family: "Noto Sans JP", sans-serif;
@@ -71,9 +71,11 @@
   margin: 0;
 }
 .flooring-wrapper .flooring-body .photoGallery img {
-  width: 90%;
+  width: 80%;
   max-width: 500px;
-  height: auto;
+  height: 80%;
+  min-height: 500px;
+  max-height: 700px;
   margin: 25px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
