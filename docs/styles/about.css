@@ -39,8 +39,8 @@ body {
 }
 .aboutWrapper .aboutBody .content .aboutUnderline {
   width: 100%;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid #0353a4;
+  border-bottom: 2px solid #0353a4;
 }
 
 .aboutWrapper .aboutBody .content .aboutContent {

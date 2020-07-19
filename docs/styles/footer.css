@@ -43,3 +43,8 @@
   width: 100%;
   margin-top: 100px;
 }
+.footer .contactInfo p a {
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}

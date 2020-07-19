@@ -8,6 +8,7 @@
   position: fixed;
   top: 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  z-index: 500;
 }
 .navBar .navBar_logo {
   display: flex;
@@ -61,7 +62,6 @@
   background-color: #ddd;
 }
 
-/* Show the dropdown menu on hover */
 .servicesDropdown:hover .dropdown_content {
   display: block;
 }

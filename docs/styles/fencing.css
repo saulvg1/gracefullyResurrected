@@ -1,0 +1,80 @@
+.fencing-wrapper {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.fencing-wrapper .fencing-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/flooringPhotos/carpetRoll.jpg);
+  padding: 100px 0;
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fencing-wrapper .fencing-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fencing-wrapper .fencing-body .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70%;
+  padding: 50px;
+}
+.fencing-wrapper .fencing-body .content h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: black;
+}
+.fencing-wrapper .fencing-body .content .line {
+  width: 100%;
+  border-bottom: 2px solid #0353a4;
+  border-radius: 20px;
+}
+.fencing-wrapper .fencing-body .content h4 {
+  font-family: "Noto Sans JP", sans-serif;
+  color: black;
+}
+
+.fencing-wrapper .fencing-body .content p {
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.fencing-wrapper .fencing-body .photoGallery {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.fencing-wrapper .fencing-body .photoGallery .images {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.fencing-wrapper .fencing-body .photoGallery img {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  margin: 25px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
