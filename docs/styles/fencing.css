@@ -6,17 +6,20 @@
 }
 
 .fencing-wrapper .fencing-header {
-  width: 100%;
+  max-width: 100%;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url(../assets/banners/fence.jpeg);
   padding: 100px 0;
-  height: 400px;
+  height: 30vh;
+  max-height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .fencing-wrapper .fencing-body {
