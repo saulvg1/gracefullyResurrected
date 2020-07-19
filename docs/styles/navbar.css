@@ -73,7 +73,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 550px) {
   body {
     overflow-x: hidden;
   }
@@ -84,7 +84,7 @@
     right: 0px;
     top: 8vh;
     height: 92vh;
-    margin-top: 50px;
+    margin-top: 86px;
     width: 50%;
     align-items: center;
     justify-content: flex-start;
@@ -97,6 +97,7 @@
   .navBar .navBar_linksWrapper.nav-active {
     padding-left: 0;
     padding-right: 0;
+    margin-top: 86px;
   }
 
   .navBar .navBar_linksWrapper .navLink {

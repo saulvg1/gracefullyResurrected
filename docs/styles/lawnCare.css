@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../assets/flooringPhotos/carpetRoll.jpg);
+  background-image: url(../assets/banners/lawnCare.jpeg);
   padding: 100px 0;
   height: 400px;
   background-attachment: fixed;
@@ -46,6 +46,7 @@
 }
 .lawnCare-wrapper .lawnCare-body .content h4 {
   font-family: "Noto Sans JP", sans-serif;
+  margin-bottom: 25px;
   color: black;
 }
 
