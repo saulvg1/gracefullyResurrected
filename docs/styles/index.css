@@ -97,6 +97,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
 }
 .homeBody-wrapper .services {
   display: flex;
@@ -252,7 +253,7 @@ body {
 .estimate .infoSection .link a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-@media only screen and (max-width: 450px) {
+/* @media only screen and (max-width: 450px) {
   .homeBody-wrapper .header {
     width: 100%;
     display: flex;
@@ -265,5 +266,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 500px 400px;
+    object-fit: cover;
   }
-}
+} */
