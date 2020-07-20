@@ -8,17 +8,30 @@ body {
   display: flex;
   flex-direction: column;
 }
-.aboutWrapper .headerImage {
+/* .aboutWrapper .headerImage {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../assets/banners/aboutBanner1.jpeg);
+  background-image: url("../assets/banners/aboutBanner1.jpeg");
   padding: 100px;
   height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+} */
+.aboutWrapper .headerImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  position: relative;
+}
+.aboutWrapper .headerImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .aboutWrapper .aboutBody {
   display: flex;

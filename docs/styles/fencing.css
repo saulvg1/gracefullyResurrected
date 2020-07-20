@@ -10,22 +10,17 @@
   height: 100%;
 }
 .fencing-wrapper .fencing-header .fencing-image {
-  max-width: 100%;
-  width: auto;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  background-image: url(../assets/banners/fence.jpeg);
-  padding: 100px 0;
-  height: 30vh;
-  max-height: 400px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+  align-items: center;
+  height: 40vh;
 }
-
+.fencing-wrapper .fencing-header .fencing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .fencing-wrapper .fencing-body {
   display: flex;
   flex-direction: column;
@@ -86,14 +81,13 @@
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
-@media only screen and (max-width: 450px) {
+/* @media only screen and (max-width: 450px) {
   .fencing-wrapper .fencing-header .fencing-image {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../assets/banners/fence.jpeg);
     height: 400px;
     padding: 0;
     background-attachment: fixed;
@@ -101,4 +95,4 @@
     background-repeat: no-repeat;
     background-size: 700px 400px;
   }
-}
+} */
