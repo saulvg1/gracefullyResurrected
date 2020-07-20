@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .contactBody {
   display: flex;
@@ -22,6 +24,9 @@ body {
   flex-grow: 2;
 }
 .contactBody .contact-wrapper .contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: auto;
   width: 80%;
   max-width: 500px;
@@ -92,10 +97,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px;
+  padding: 100px 50px;
   height: auto;
   max-height: 500px;
-  width: auto;
+  width: 80%;
+  max-width: 500px;
+  box-sizing: border-box;
 }
 .contactBody .contact-wrapper .contactInfo .contactInfo-wrapper {
   display: flex;
@@ -144,4 +151,9 @@ body {
 }
 .googleMap h1 {
   text-align: center;
+}
+@media only screen and (max-width: 360px) {
+  .contactBody .contact-wrapper .contactInfo {
+    padding: 100px 20;
+  }
 }
