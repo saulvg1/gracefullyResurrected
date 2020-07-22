@@ -6,12 +6,6 @@ const navSlide = () => {
     nav.classList.toggle("nav-active");
   });
 };
-const closeNav = () => {
-  const nav = document.querySelector(".navBar .navBar_linksWrapper");
-  document.addEventListener("click", () => {
-    nav.classList.remove("nav-active");
-  });
-};
 
 const activeDropdownLink = () => {
   const navLink = document.querySelector("#navLink-dropdown");

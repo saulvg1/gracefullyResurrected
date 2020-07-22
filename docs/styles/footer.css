@@ -3,9 +3,12 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  background-color: #201e1d;
+  align-items: center;
+  /* background-color: #979dac; */
+  /* background-color: whitesmoke; */
+  background-color: #0466c8;
   box-shadow: 5px 4px 10px rgba(150, 150, 150, 1);
 }
 .footer .logo {
@@ -15,14 +18,14 @@
 }
 .footer .logo img {
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
 }
 .footer .contactInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 20px;
 }
 .footer .contactInfo h3 {
   font-size: 1.6em;
@@ -37,11 +40,10 @@
   margin: 0;
 }
 .footer .contactInfo p {
-  font-size: 0.7em;
+  font-size: 1.2em;
   color: white;
   text-align: center;
   width: 100%;
-  margin-top: 100px;
 }
 .footer .contactInfo p a {
   color: white;
