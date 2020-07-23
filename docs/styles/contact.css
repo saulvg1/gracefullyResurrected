@@ -19,7 +19,7 @@ body {
   width: 100%;
   height: 100%;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   flex-grow: 2;
 }
@@ -30,6 +30,7 @@ body {
   height: auto;
   width: 80%;
   max-width: 500px;
+  margin: 100px;
 }
 .contactBody .contact-wrapper .contactForm h1 {
   text-align: center;
@@ -97,7 +98,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 50px;
+  margin: 100px;
   height: auto;
   max-height: 500px;
   width: 80%;
