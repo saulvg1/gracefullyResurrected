@@ -1,17 +1,12 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .contactBody {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: 150px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-top: 15rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .contactBody .contact-wrapper {
   display: flex;
@@ -29,8 +24,8 @@ body {
   align-items: center;
   height: auto;
   width: 80%;
-  max-width: 500px;
-  margin: 100px;
+  max-width: 50rem;
+  margin: 10rem;
 }
 .contactBody .contact-wrapper .contactForm h1 {
   text-align: center;
@@ -45,6 +40,7 @@ body {
 }
 .contactBody .contact-wrapper .contactForm form .hidden.visable {
   visibility: visible;
+  font-size: 2rem;
   color: green;
 }
 .contactBody .contact-wrapper .contactForm .formInput {
@@ -59,21 +55,22 @@ body {
   display: flex;
   justify-content: start;
   width: 100%;
+  font-size: 2rem;
 }
 .contactBody .contact-wrapper .contactForm .formInput input {
   width: 100%;
-  height: 30px;
-  margin-bottom: 30px;
+  height: 3rem;
+  margin-bottom: 3rem;
   border: none;
-  border-bottom: 2px solid black;
-  border-radius: 5px;
+  border-bottom: 0.2rem solid black;
+  border-radius: 0.5rem;
 }
 .contactBody .contact-wrapper .contactForm .formInput input:focus {
   outline: none;
-  border-bottom: 2px solid blue;
+  border-bottom: 0.2rem solid blue;
 }
 .contactBody .contact-wrapper .contactForm .formInput input:hover {
-  border-bottom: 2px solid blue;
+  border-bottom: 0.2rem solid blue;
 }
 .contactBody .contact-wrapper .contactForm .formButton {
   width: 100%;
@@ -81,16 +78,16 @@ body {
   justify-content: center;
 }
 .contactBody .contact-wrapper .contactForm .formButton button {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   cursor: pointer;
-  border: 2px solid black;
+  border: 0.2rem solid black;
   background-color: #0466c8;
   color: white;
-  padding: 20px;
-  margin: 20px;
-  border: 1px solid #0466c8;
-  border-radius: 3px;
+  padding: 2rem;
+  margin: 2rem;
+  border: 0.1rem solid #0466c8;
+  border-radius: 0.3rem;
 }
 
 .contactBody .contact-wrapper .contactInfo {
@@ -98,11 +95,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 100px;
+  margin: 10rem;
   height: auto;
-  max-height: 500px;
+  max-height: 50rem;
   width: 80%;
-  max-width: 500px;
+  max-width: 50rem;
   box-sizing: border-box;
 }
 .contactBody .contact-wrapper .contactInfo .contactInfo-wrapper {
@@ -110,7 +107,7 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  max-height: 500px;
+  max-height: 50rem;
   height: 50vh;
   width: auto;
 }
@@ -121,7 +118,7 @@ body {
   .contactInfo-header
   h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 .contactBody
   .contact-wrapper
@@ -130,31 +127,51 @@ body {
   .contactInfo-header
   .contactInfo-line {
   width: 100%;
-  border-top: 2px solid #0353a4;
-  border-bottom: 2px solid #0353a4;
+  border-top: 0.2rem solid #0353a4;
+  border-bottom: 0.2rem solid #0353a4;
 }
 .contactBody
   .contact-wrapper
   .contactInfo
   .contactInfo-wrapper
   .contactInfo-content {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+}
+.contactBody
+  .contact-wrapper
+  .contactInfo
+  .contactInfo-wrapper
+  .contactInfo-content
+  .p1 {
+  display: inline-block;
+  width: 100%;
+}
+.contactBody
+  .contact-wrapper
+  .contactInfo
+  .contactInfo-wrapper
+  .contactInfo-content
+  .p2 {
+  display: inline-block;
+  width: 100%;
 }
 
 .googleMap {
   width: 100%;
-  height: 400px;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 5rem;
 }
 .googleMap h1 {
   text-align: center;
+  font-size: 3rem;
+  margin: 2rem;
 }
 @media only screen and (max-width: 360px) {
   .contactBody .contact-wrapper .contactInfo {
-    padding: 100px 20;
+    padding: 10rem 20;
   }
 }
