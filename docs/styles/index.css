@@ -152,6 +152,12 @@
   font-size: 5rem;
   color: #002855;
 }
+.home-wrapper .services .servicesSection .serviceWrapper .serviceContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
 .home-wrapper .services .servicesSection .serviceWrapper .serviceContent h2 a {
   text-decoration: none;
   color: #002855;

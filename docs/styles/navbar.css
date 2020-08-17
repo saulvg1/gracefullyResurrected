@@ -102,11 +102,18 @@
   .navBar .navBar_linksWrapper .navLink {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
   .navBar .navBar_linksWrapper .navLink a {
     padding: 5rem 0px;
     width: 100%;
     text-align: center;
+  }
+  .navBar .navBar_linksWrapper.nav-active .servicesDropdown .dropdown_content {
+    width: 100% !important;
+  }
+  .servicesDropdown .dropdown_content.activeDropdown a {
+    width: 100%;
   }
   .navBar .navBar_linksWrapper.nav-active .navLink {
     width: 100%;
@@ -119,21 +126,27 @@
     width: 100%;
   }
   .navBar .navBar_linksWrapper .dropdown_content.activeDropdown {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    min-width: 0;
     box-shadow: none;
     background-color: #c0c0c0;
+    width: 100%;
   }
-  .servicesDropdown:hover .dropdown_content {
+  .navBar .navBar_linksWrapper .dropdown_content {
     display: none;
+    position: relative;
+    box-shadow: none;
+    background-color: #c0c0c0;
+    width: 100%;
   }
+
   .navBar
     .navBar_linksWrapper.nav-active
     .servicesDropdown
     .dropdown_content.activeDropdown
     a {
-    width: 100% !important;
+    width: 100%;
   }
   .burger {
     display: block;

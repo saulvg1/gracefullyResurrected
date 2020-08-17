@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/contact.css" />
     <link rel="stylesheet" href="styles/footer.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            emailjs.init('user_7gupNmwABxFluFtiyBIGh');
+            const user = "user_WZCFMULxSBEjPSy2qYFeJ"
+            emailjs.init(user);
         })();
     </script>
     <script type="text/javascript">
@@ -22,8 +23,11 @@
             document.querySelector('#contact-form').addEventListener('submit', function (event) {
                 const form = document.querySelector("#contact-form")
                 const message = document.querySelector(".hidden")
+                var service_id = "default_service";
+                var template_id = "template_SC5WqaPb";
+                emailjs.sendForm(service_id, template_id, this);
                 event.preventDefault();
-                emailjs.sendForm('gmail', 'template_wdnXWxuU', this);
+                // emailjs.sendForm('gmail', 'template_wdnXWxuU', this);
                 form.reset();
                 message.classList.add("visable")
             });
@@ -48,8 +52,8 @@
                 <a href="about.html">About</a>
             </div>
             <div class="servicesDropdown">
-                <div class="navLink" id="navLink-dropdown">
-                    <a href="#">Services</a>
+                <div class="navLink">
+                    <a id="navLink-dropdown" href="#">Services</a>
                 </div>
                 <div class="dropdown_content">
                     <a href="./lawnCare.html">Lawn care</a>

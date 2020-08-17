@@ -1,6 +1,8 @@
 const burger = document.querySelector(".burger");
 const nav = document.querySelector(".navBar .navBar_linksWrapper");
 const navLink = document.querySelector("#navLink-dropdown");
+
+const servicesDropdown = document.querySelector("#navLink-dropdown");
 const dropdown = document.querySelector(".dropdown_content");
 
 const navSlide = () => {
@@ -16,8 +18,12 @@ const activeDropdownLink = () => {
 };
 
 window.addEventListener("click", function (event) {
-  // const activeNav = document.querySelector(".navBar_linksWrapper .nav-active");
-  if (event.target != nav && event.target != burger) {
+  if (
+    event.target != nav &&
+    event.target != burger &&
+    event.target != nav.children &&
+    event.target != servicesDropdown
+  ) {
     nav.classList.remove("nav-active");
   }
 });
