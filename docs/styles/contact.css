@@ -38,7 +38,17 @@
 .contactBody .contact-wrapper .contactForm form .hidden {
   visibility: hidden;
 }
-.contactBody .contact-wrapper .contactForm form .hidden.visable {
+.contactBody .contact-wrapper .contactForm form .hidden.visible {
+  visibility: visible;
+  font-size: 2rem;
+  color: green;
+}
+.contactBody .contact-wrapper .contactForm form .hidden.error {
+  visibility: visible;
+  font-size: 2rem;
+  color: red;
+}
+.contactBody .contact-wrapper .contactForm form .hidden.visible {
   visibility: visible;
   font-size: 2rem;
   color: green;

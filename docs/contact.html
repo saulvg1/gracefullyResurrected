@@ -14,22 +14,40 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            const user = "user_WZCFMULxSBEjPSy2qYFeJ"
-            emailjs.init(user);
+            emailjs.init("user_WZCFMULxSBEjPSy2qYFeJ");
         })();
     </script>
     <script type="text/javascript">
         window.onload = function () {
+            event.preventDefault();
             document.querySelector('#contact-form').addEventListener('submit', function (event) {
-                const form = document.querySelector("#contact-form")
-                const message = document.querySelector(".hidden")
-                var service_id = "default_service";
-                var template_id = "template_SC5WqaPb";
-                emailjs.sendForm(service_id, template_id, this);
-                event.preventDefault();
-                // emailjs.sendForm('gmail', 'template_wdnXWxuU', this);
-                form.reset();
-                message.classList.add("visable")
+                //selectors 
+                const form = document.querySelector("#contact-form");
+                const message = document.querySelector(".hidden");
+                //form creds
+                let template_params = {
+                    "reply_to": "reply_to_value",
+                    "from_name": "from_name_value",
+                    "to_name": "to_name_value",
+                    "user_email": "user_email_value",
+                    "user_city": "user_city_value",
+                    "user_phone": "user_phone_value",
+                    "user_project": "user_project_value",
+                    "message_html": "message_html_value"
+                }
+                let service_id = 'default_service';
+                let template_id = 'template_SC5WqaPb';
+                emailjs.send(service_id, template_id, template_params)
+                    .then(function (response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        form.reset();
+                        message.classList.add('visible')
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                        message.classList.add('error')
+                        message.innerHTML("<div class='hidden'>Error Sending Message</div>")
+                    });;
+
             });
         }
     </script>
@@ -97,9 +115,10 @@
                         <input type="text" name="message_html" required />
                     </div>
                     <div class="hidden">Message Sent</div>
+
                     <div class=" formButton">
                         <button type="submit" value="Reset Form">Send Message</button>
-                    </div>
+                        </>
 
                 </form>
             </div>
