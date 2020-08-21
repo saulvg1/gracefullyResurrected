@@ -26,6 +26,7 @@
                 const form = document.querySelector("#contact-form");
                 const message = document.querySelector(".hidden");
 
+
                 //form creds
                 let template_params = {
                     "from_name": "from_name",
@@ -46,8 +47,10 @@
                         message.classList.add('visible')
                     }, function (error) {
                         console.log('FAILED...', error);
+                        form.reset();
                         message.classList.add('error');
                         message.innerHTML = "Error Sending Message"
+
                     });
 
             });
@@ -89,9 +92,10 @@
     </div>
     <div class="contactBody">
         <div class="contact-wrapper">
+
             <div class="contactForm">
                 <h1>Contact Gracefully Resurrected</h1>
-                <form id="contact-form">
+                <form id="contact-form" method="POST">
                     <div class="formInput">
                         <label>Name:</label>
                         <input type="text" name="from_name" required />
@@ -120,7 +124,7 @@
 
                     <div class=" formButton">
                         <button type="submit" value="Reset Form">Send Message</button>
-                        </>
+                    </div>
 
                 </form>
             </div>
