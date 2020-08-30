@@ -1,4 +1,13 @@
 {
+  "targets": {
+    "business-sites-69579": {
+      "hosting": {
+        "arts-asphalt": [
+          "arts-asphalt.web.app"
+        ]
+      }
+    }
+  },
   "projects": {
     "default": "business-sites-69579"
   }
